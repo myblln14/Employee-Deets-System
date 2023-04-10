@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+
+}
+body{
+background: #CFFFB2;
+
+}
+
+/*NAV BAR*/
+.navbar{
+    width: 100%;
+    background-color: green;
+    padding: 2%;
+    color: white;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 11%;
+    z-index: 1;
+}
+.navbar h1{
+    align-self: center;
+}
+
+.navlist{
+    margin-right: 10%;
+    align-self: center;
+}
+.navbar .navlist ul{
+    display: flex;
+    list-style: none;
+    font-size: large;
+   
+}
+
+.navbar .navlist ul li{
+    align-self: center;
+    padding: 5%;
+}
+.navbar .navlist ul li .user-icon{
+    width: 118px;
+    background-color: chartreuse;
+    padding: 10%;
+    border-radius: 25px;
+    display:flex;
+    align-self: center;
+}
+.navbar .navlist ul li .user-icon i{
+
+    background-color: gray;
+    padding: 5%;
+    border-radius: 15px;
+    align-self: center;
+
+}
+.navbar .navlist ul li .user-icon p{
+    align-self: center;
+
+}
+
+.fcontainer{
+    position: relative;
+    margin-left: 28%;
+    
+}
+.inst{
+    width: 69.8%;
+    color:rgba(0, 0, 0, 1);
+    padding: 15% 2% 8% 2%;
+    text-align: center;
+    z-index: -1;
+    font-size: x-large;
+    font-weight: 100;
+    background: linear-gradient(270deg, #74F081 50%, rgba(255, 9, 9, 0) 100%);
+    border-style: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+
+}
+
+.tfields{
+    width: 70%;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 2%;
+    position: absolute;
+    top: 90%;
+}
+
+
+input[type=text] {
+    background-color: #F5F5F5;
+    border-style: none;
+    border-bottom: 2px solid black;
+    width:100%;
+}
+
+.firstrow, .thirdrow{
+    display: flex;
+    justify-content: space-between;
+}
+.firstrow *, .thirdrow *{
+    padding: 4%;
+}
+
+.firstrow input[type=text], .thirdrow input[type=text]{
+    padding: 4%;
+}
+
+.secondrow {
+    display: block;
+    padding: 4%;
+    width: 90%;
+}
+
+.secondrow input[type=text]{
+    padding: 2%;
+    width: 100%;
+}
+
+.confField .confCheckbox{
+    padding: 20%;
+    text-align: center;
+}
+
+.confField .confCheckbox *{
+    padding: 2%;
+}
+
+.confField input[type=submit]{
+    color: white;
+    font-weight: 300;
+    background-color: blue;
+    width: 35%;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 50px;
+    border-style: none;
+}
+
+/*SIDE BAR NAV*/
+.sidebar_nav{
+    position: fixed;
+    width: 90px;
+    height: 1024px;
+    left: 0px;
+    top: 78px;
+    
+    background-color: #00072D;
+
+}
+
+.sidebar_nav.active{width: 350px;}
+
+
+.sidebar_nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 150px;
+}
+
+.sidebar_nav ul li{
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.sidebar_nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #FF6B00;
+}
+
+.sidebar_nav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 65px;
+    height: 100px;
+    width: 50px;
+    top: 50px;
+    line-height: 130px;
+    text-align: center;
+    left: 5px;
+   
+}
+
+.sidebar_nav ul li a .icon1, .icon2, .icon3, .icon4{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 100px;
+    top: 50px;
+    line-height: 120px;
+    text-align: center;
+    left: 0px;
+    margin-left: 0px;
+}
+
+.sidebar_nav ul li a .icon img{max-width: 50%;}
+
+
+
+.sidebar_nav ul li a .title1{
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    height: 40px;
+    top: 25px;
+    line-height: 150px;
+    white-space: normal;
+    color: white;
+}
+
+.sidebar_nav ul li a .icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover{
+
+    background: linear-gradient(90deg, #00147D 29.85%, rgba(0, 20, 125, 0.5624) 82.51%, rgba(0, 20, 125, 0) 100%);
+    
+}
+
+
+
+/*MENU/hamburger icon*/
+
+.menu{
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    float: left;
+}
+.menu.active{left: 200px;}
+
+.menu ion-icon{
+    position: absolute;
+    color: #FF6B00;
+    font-size: 34px;
+    display: none;
+    width: 70px;
+    top: 100px;
+
+}
+
+/*hide option texts*/
+#defaulthide1, #defaulthide2, #defaulthide3, #defaulthide4{
+    visibility: hidden;
+}
+
+
+
+
+/* Open round */
+.menu ion-icon.open,
+.menu.active ion-icon.close{
+
+    display:grid;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+
+/* Close_round */
+}
+.menu ion-icon.close,
+.menu.active ion-icon.open{
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+}
+
+
+/* Body COntents */
+
+.groupFormFlexer{
+    display: flex;
+}
+
+.container{
+    position: absolute;
+    width: 1044px;
+    height: 862px;
+    left: 509px;
+    top: 257px;
+    
+    background: #F5F5F5;
+    box-shadow: 0px 4.20302px 4.20302px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .container .label{
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Cairo';
+    position: center;
+    font-size: 30px;
+  }
+  .container .label::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: white;
+    font-family: 'Cairo';
+    font-size: 30px;
+  }
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+    font-family: 'Cairo';
+    font-size: 40%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(90% / 2 - 10px);
+    text-align: center;
+    font-family: 'Cairo';
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Cairo';
+    border-radius: 5px;
+    padding-left: 1px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: white;
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Cairo';
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two
+  {
+     background: black;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+
+ .container.text{
+    position: absolute;
+    width: 255px;
+    height: 47px;
+    left: 803px;
+    top: 655px;
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 47px;
+/* identical to box height */
+
+    display: flex;
+    align-items: right;
+    text-align: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(246, 244, 244, 0.811);
+ }
+ .user-details 
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+    font-size: 40%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(90% / 2 - 10px);
+  }
+
+ .text.r{
+    position: absolute;
+    width: 224px;
+    height: 28px;
+    left: 822px;
+    top: 702px;
+    
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 28px;
+    
+    color: #000000;
+    
+ }
+   

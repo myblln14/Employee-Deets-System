@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <h1>XILLIUM</h1>
+		<div class="navlist">
+			<ul>
+				<li><p>Home</p></li>
+				<li><i class="fa-solid fa-message"></i></li>
+				<li><i class="fa-solid fa-bell"></i></li>
+				<li>
+					<div class="user-icon">
+						<i class="fa-solid fa-user"></i>
+						<p>&nbsp;Jorliden</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+    </div>
+
+<!--USER PROFILE-->
+<div style="display: flex; padding:7% 0 2% 0; align-items: center;">
+  <span style="width: 70%;"><hr style="background-color: black; width:100%; height: 100%; position: relative;"></span>
+  <p style="font-family: Cairo; font-size: 150%; font-weight: bolder; padding: 1%; position: relative;">User&nbsp;Profile</p>
+  <span style="width: 100%;"><hr style="background-color: black; width:100%; height: 100%;"></span>
+</div>
+
+
+	<div class="container">
+        <!--EMPLOYEE'S IMAGE ON THE LEFT PANE-->
+        <div class="leftpane">
+            <img class="profpic" src="assets/pic1.jpg" alt="" srcset="" width="100%">
+        </div>
+        <!--DETAILS ON THE RIGHT PANE-->
+        <div class="rightpane">
+            <div class="importantdeets">
+                    <div class="cell">
+                      <!--EMPLOYEE NO.-->
+                        <p class="celllabel">Employee No.</p>
+                        <p class="cellinfo"><span class="empno">(092123-057)</span></p>
+                    </div>
+                    <div class="cell">
+                      <!--BRANCH-->
+                        <p class="celllabel">Branch</p>
+                        <p class="cellinfo">ILOILO</p>
+                    </div>
+                    <div class="cell">
+                      <!--DATE HIRED-->
+                        <p class="celllabel">Date Hired</p>
+                        <p class="cellinfo">07/15/20</p>
+                    </div>
+                    <div class="cell">
+                      <!--TIMED IN-->
+                        <p class="cellinfo" id="timeInStatement">Timed in at <span class="timeIn">06:25 PM</span></p>
+                        <hr style="width:90%; margin:auto; background-color: #454545;">
+                      <!--TIMED OUT-->
+                        <p class="cellinfo" id="timeOutStatement">Logged out at <span class="timeOut">03:45 PM</span></p>
+                    </div>
+                    <div class="cell">
+                      <!--TIMESHIFT-->
+                        <p class="celllabel">TIMESHIFT</p>
+                        <p class="cellinfo"><span class="timeShiftHours">06:00 PM - 03:00 AM</span></p>
+                    </div>
+                    <div class="cell">
+                      <!--TIMEZONE-->
+                        <p class="celllabel">TIMEZONE</p>
+                        <p class="cellinfo">GMT + 8</p>
+                    </div>
+                    <div class="cell">
+                      <!--FIRST NAME-->
+                        <p class="celllabel fullname">First Name</p>
+                        <p class="cellinfo" id="firstName">Taylor</p>
+                    </div>
+                    <div class="cell">
+                      <!--MIDDLE INITIAL-->
+                        <p class="celllabel fullname">Middle Initial</p>
+                        <p class="cellinfo" id="middleInitial">F.</p>
+                    </div>
+                    <div class="cell">
+                      <!--LAST NAME-->
+                        <p class="celllabel fullname">Last Name</p>
+                        <p class="cellinfo" id="lastName">Swift</p>
+                    </div>
+                    
+            </div>
+                      <!--ADDRESS-->
+            <div class="cell">
+                <p class="celllabel">Address</p>
+                <p class="cellinfo" id="addressDeets">Luna St., La Paz, Iloilo City</p>
+            </div>
+
+            <div class="otherDeets">
+                <div class="cell">
+                      <!--BIRTHDAY-->
+                    <p class="celllabel">Birthday</p>
+                    <p class="cellinfo">12/13/1989</p>
+                </div>
+                <div class="cell">
+                      <!--SEX-->
+                    <p class="celllabel">Sex</p>
+                    <p class="cellinfo" >Female</p>
+                </div>
+                 <div class="cell">
+                   <!--FILLER CELL: NOT TO BE BOTHERED-->
+                 </div>
+                 <div class="cell">
+                    <!--HORIZONTAL LINE: NOT TO BE BOTHERED-->
+                    <hr>
+                  </div>
+                <div class="cell">
+                  <!--CONTACT PERSON-->
+                    <p class="celllabel"><span class="emergency">In Case of Emergency, Contact</span> </p>
+                    <p class="cellinfo" >Andrea Swift</p>
+                </div>
+                <div class="cell">
+                  <!--CONTACT PERSON ADDRESS-->
+                    <p class="celllabel">Address</p>
+                    <p class="cellinfo" >Reading, Pennsylvania</p>
+                </div>
+                <div class="cell">
+                  <!--CONTACT PERSON'S NUMBER-->
+                    <p class="celllabel">Contact No.</p>
+                    <p class="cellinfo" ><span class="contactNumber"><b>09251990654</b> </span></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div style="display: flex; padding:30% 0 2% 0; align-items: center;">
+      <span style="width: 70%;"><hr style="background-color: black; width:100%; height: 100%; position: relative;"></span>
+      <p style="font-family: Cairo; font-size: 150%; font-weight: bolder; padding: 1%; position: relative;">Government&nbsp;Numbers</p>
+      <span style="width: 100%;"><hr style="background-color: black; width:100%; height: 100%;"></span>
+    </div>
+
+     <!--Government Numbers-->   
+	 <div class="govt_num">
+        <!---BIR Logo-->
+        <div class="circle">
+          <img class ="card-logo"src="assets/image 2.png" alt="" srcset="">
+		</div>
+        <!---SSS Logo-->
+        <div class="circle1">
+          <img class ="card-logo"src="assets/image 7 (1).png" alt="" srcset="">
+        </div>
+        <!---Philhealth Logo-->
+        <div class="circle2">
+          <img class ="card-logo"src="assets/image 7.png" alt="" srcset="">
+        </div>
+			<p>GOVERNMENT BENEFITS</p>	
+	</div>
+
+	<!--Personal Backgrounds-->   
+	<div class="personal_bg">
+		<div class="folder">
+			<img class ="card-logo"src="assets/image 9.png" alt="" srcset="">
+		  </div>
+		<p>PERSONAL BACKGROUNDS</p>	
+	</div>
+
+  
+     <!--SIDE BAR NAVBAR-->
+     <div class="sidebar_nav">
+		<ul>
+		  <li class="list">
+			<a href="">
+			  <span class="icon1">
+				<img src="assets/icon-user.png" alt="">
+				</span>
+			  <span class="title1" id="defaulthide1">USER INFORMATION</span>
+			</a>
+		  </li>
+	  
+		  <li class="list">
+			<a href="">
+			  <span class="icon2">
+				<img src="assets/icon-gov.png" alt=""></span>
+			  <span class="title1" id="defaulthide2">GOV'T ID's + INSURANCES</span>
+			</a>
+		  </li>
+	  
+		  <li class="list">
+			<a href="">
+			  <span class="icon3">
+				<img src="assets/icon-prog.png" alt=""></span>
+			  <span class="title1" id="defaulthide3">MY PROGRESS</span>
+			</a>
+		  </li>
+	  
+		  <li class="list">
+			<a href="">
+			  <span class="icon4">
+				<img src="assets/icon-settings.png" alt=""></span>
+			  <span class="title1" id="defaulthide4">SETTINGS</span>
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	  
+	  
+   <!--MENU-->
+   <div class="menu" >
+	  <ion-icon name="menu-outline"  class="open" onclick="showOptions()"></ion-icon>
+	  <ion-icon name="close-outline" class="close" onclick="hideOptions()"></ion-icon>
+  </div>
+  
+  
+  <script>
+	  function showOptions(){
+	  document.getElementById("defaulthide1").style.visibility = "visible";
+	  document.getElementById("defaulthide2").style.visibility = "visible";
+	  document.getElementById("defaulthide3").style.visibility = "visible";
+	  document.getElementById("defaulthide4").style.visibility = "visible";
+	}
+	  function hideOptions(){
+	  document.getElementById("defaulthide1").style.visibility = "hidden";
+	  document.getElementById("defaulthide2").style.visibility = "hidden";
+	  document.getElementById("defaulthide3").style.visibility = "hidden";
+	  document.getElementById("defaulthide4").style.visibility = "hidden";
+	  }
+  
+  </script>
+  
+  <script type="text/javascript">
+  
+  
+  
+	  let menuToggle = document.querySelector('.menu')
+	  let Navigation = document.querySelector('.sidebar_nav')
+	  menuToggle.onclick = function(){
+		  menuToggle.classList.toggle('active')
+		  Navigation.classList.toggle('active')
+	  }
+  
+	  let list = document.querySelectorAll('.list');
+	  for(let i = 0; i < list.length; i++){
+		  list[i].onclick = function(){
+			  let j = 0;
+			  while (j < list.length){
+				  list[j++].className = 'list'
+			  }
+			  list[i].className = 'list active';
+		  }
+	  }
+  </script>
+  
+  <!--?? WHAT FUNCTION???-->
+  <script type="text/javascript">
+	  $(document).ready(function(){
+		  $(".open").click(function(){
+			  $(".m-soft").css('display','block');
+			  
+		  });
+		  $(".close").click(function(){
+			  $(".m-soft").css('visibility','hidden');
+		  });
+	  });
+  </script>
+	
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body>
+
+     <!--NAVBAR-->
+     <div class="navbar">
+        <h1>XILLIUM</h1>
+		<div class="navlist">
+			<ul>
+				<li><p>Home</p></li>
+				<li><i class="fa-solid fa-message"></i></li>
+				<li><i class="fa-solid fa-bell"></i></li>
+				<li>
+					<div class="user-icon">
+						<i class="fa-solid fa-user"></i>
+						<p>&nbsp;Jorliden</p>
+					</div>
+
+				</li>
+			</ul>
+		</div>
+    </div>
+
+        <!--Body COntents-->
+
+        <div class="body">
+            <p>THINGS I NEED TO DO, ASAP:</p>
+        </div>
+        <!---BIR Logo-->
+        <div class="circle">
+          <img class ="card-logo"src="assets/bir-logo.png" alt="" srcset="">
+       
+
+        <!---SSS Logo-->
+        
+        <div class="circle1">
+          <img class ="card-logo"src="assets/sss-logo.png" alt="" srcset="">
+        </div>
+        
+        <!---Philhealth Logo-->
+        <div class="circle2">
+          <img class ="card-logo"src="assets/phl-logo.png" alt="" srcset="">
+        </div>
+      </div>
+
+        <!---Pag-ibig Logo-->
+        <div class="circle3">
+          <img class ="card-logo"src="assets/pgb-logo.png" alt="" srcset="">
+        </div>
+
+
+        <div class="text">
+          <p>As a Xillium Employee, you have completed:</p>
+        </div>
+
+        <div class="user-info">
+          <p>USER INFORMATION</p>
+        </div>
+
+        <div class="complete">
+          <p>100% Complete</p>
+        </div>
+
+        <div class="check">
+          <img class ="card-logo"src="assets/Subtract.png" alt="" srcset="">
+        </div>
+
+        <!-- 75% complete -->
+        <div class="circle-wrap">
+          <div class="circle-bar">
+            <div class="mask full">
+              <div class="fill"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill"></div>
+            </div>
+            <div class="inside-circle"> 75% <br>Complete</div>
+          </div>
+        </div>
+
+         <!--SIDE BAR NAVBAR-->
+         <div class="sidebar_nav">
+            <ul>
+              <li class="list">
+                <a href="../User Information/personal info.html">
+                  <span class="icon1">
+                    <img src="assets/icon-user.png" alt=""></span>
+                  <span class="title1" id="defaulthide1">USER INFORMATION</span>
+                </a>
+              </li>
+          
+              <li class="list">
+                <a href="../Government IDs + Insurances/gov-cards.html">
+                  <span class="icon2">
+                    <img src="assets/icon-gov.png" alt=""></span>
+                  <span class="title1" id="defaulthide2">GOV'T ID's + INSURANCES</span>
+                </a>
+              </li>
+          
+              <li class="list">
+                <a href="../My Progress/progress.html">
+                  <span class="icon3">
+                    <img src="assets/icon-prog.png" alt=""></span>
+                  <span class="title1" id="defaulthide3">MY PROGRESS</span>
+                </a>
+              </li>
+          
+              <li class="list">
+                <a href="../Settings/set.html">
+                  <span class="icon4">
+                    <img src="assets/icon-settings.png" alt=""></span>
+                  <span class="title1" id="defaulthide4">SETTINGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          
+       <!--MENU-->
+       <div class="menu" >
+          <ion-icon name="menu-outline"  class="open" onclick="showOptions()"></ion-icon>
+          <ion-icon name="close-outline" class="close" onclick="hideOptions()"></ion-icon>
+      </div>
+      
+      
+      <script>
+          function showOptions(){
+          document.getElementById("defaulthide1").style.visibility = "visible";
+          document.getElementById("defaulthide2").style.visibility = "visible";
+          document.getElementById("defaulthide3").style.visibility = "visible";
+          document.getElementById("defaulthide4").style.visibility = "visible";
+        }
+          function hideOptions(){
+          document.getElementById("defaulthide1").style.visibility = "hidden";
+          document.getElementById("defaulthide2").style.visibility = "hidden";
+          document.getElementById("defaulthide3").style.visibility = "hidden";
+          document.getElementById("defaulthide4").style.visibility = "hidden";
+          }
+      
+      </script>
+      
+      <script type="text/javascript">
+      
+      
+      
+          let menuToggle = document.querySelector('.menu')
+          let Navigation = document.querySelector('.sidebar_nav')
+          menuToggle.onclick = function(){
+              menuToggle.classList.toggle('active')
+              Navigation.classList.toggle('active')
+          }
+      
+          let list = document.querySelectorAll('.list');
+          for(let i = 0; i < list.length; i++){
+              list[i].onclick = function(){
+                  let j = 0;
+                  while (j < list.length){
+                      list[j++].className = 'list'
+                  }
+                  list[i].className = 'list active';
+              }
+          }
+      </script>
+      
+      <!--?? WHAT FUNCTION???-->
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $(".open").click(function(){
+                  $(".m-soft").css('display','block');
+                  
+              });
+              $(".close").click(function(){
+                  $(".m-soft").css('visibility','hidden');
+              });
+          });
+      </script>
+        
+    </body>
+    </html>

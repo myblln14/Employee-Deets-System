@@ -1,0 +1,428 @@
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* NAVBAR */
+  .navbar{
+    width: 100%;
+    background-color: green;
+    padding: 2%;
+    color: white;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 11%;
+    z-index: 1;
+  }
+  .navbar h1{
+    align-self: center;
+  }
+  
+  .navlist{
+    margin-right: 10%;
+    align-self: center;
+  }
+  .navbar .navlist ul{
+    display: flex;
+    list-style: none;
+    font-size: large;
+   
+  }
+  
+  .navbar .navlist ul li{
+    align-self: center;
+    padding: 5%;
+  }
+  .navbar .navlist ul li .user-icon{
+    width: 118px;
+    background-color: chartreuse;
+    padding: 10%;
+    border-radius: 25px;
+    display:flex;
+    align-self: center;
+  }
+  .navbar .navlist ul li .user-icon i{
+  
+    background-color: gray;
+    padding: 5%;
+    border-radius: 15px;
+    align-self: center;
+  
+  }
+  .navbar .navlist ul li .user-icon p{
+    align-self: center;
+  
+  }
+
+  
+  /* Body Content*/
+
+  .body{
+  position: absolute;
+  width: 432px;
+  height: 51px;
+  left: 430px;
+  top: 130px;
+
+  background: #FFC5AB;
+  border-radius: 0px 30px;
+  }
+
+  .body p{
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26.4416px;
+  line-height: 107.4%;
+/* or 28px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 40px;
+  color: #142800;
+  }
+  
+.circle{
+  position: absolute;
+  width: 321px;
+  height: 320px;
+  left: 473px;
+  top: 212px;
+  border-radius: 100%;
+
+  background: #38CA4F;
+}
+
+.circle .card-logo{
+  width: 30%;
+  position:absolute;
+  top:20%;
+  left: 20%;
+
+}
+.circle1 .card-logo{
+  width: 30%;
+  position:absolute;
+  top: 40%;
+  left: 55%;
+  
+
+}
+.circle2 .card-logo{
+  width: 30%;
+  position:absolute;
+  top:70%;
+  left: 30%;
+
+}
+
+.circle3{
+  position: absolute;
+  width: 179px;
+  height: 178px;
+  left: 940px;
+  top: 172px;
+  border-radius: 50%;
+
+
+  background: #F7C1A8;
+}
+
+.circle3 .card-logo{
+  width: 50%;
+  position:absolute;
+  top:23%;
+  left: 25%;
+}
+
+.text p{
+  position: absolute;
+  width: 509px;
+  height: 46.27px;
+  left: 457px;
+  top: 610px;
+
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26.4416px;
+  line-height: 107.4%;
+/* or 28px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #142800;
+}
+
+.user-info{
+position: absolute;
+width: 336px;
+height: 54px;
+left: 430px;
+top: 690px;
+
+background: linear-gradient(90deg, #D9D9D9 65.41%, rgba(217, 217, 217, 0) 92.41%);
+}
+
+.user-info p{
+left: 450px;
+top: 703px;
+
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 400;
+font-size: 17.0625px;
+line-height: 50px;
+margin-left: 10%;
+
+color: #000000;
+}
+
+.complete p{
+position: absolute;
+width: 123px;
+height: 39px;
+left: 544px;
+top: 855px;
+
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 300;
+font-size: 26.4416px;
+line-height: 89.4%;
+/* or 24px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+}
+
+.check{
+position: absolute;
+width: 170px;
+height: 173px;
+left: 688px;
+top: 786px;
+border-radius: 50%;
+border: 15px solid #38CA4F;
+
+background: white;
+}
+
+.check .card-logo{
+  margin-top: 33px;
+  margin-left: 32px;
+}
+
+
+.circle-wrap {
+  width: 220px;
+  height: 220px;
+  background: transparent;
+  border-radius: 100%;
+  border: 17px solid #38CA2B;
+  border-radius: 80%;
+  margin-left: 780px;
+  top: 280px;
+  position: absolute;  
+  padding: 5% 3%;
+}
+
+.circle-wrap .circle-bar .mask,
+.circle-wrap .circle-bar .fill {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.circle-wrap .circle-bar .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #000000;
+  position: absolute;
+  font-family: 'Cairo';
+  font-weight: 200;
+  font-size: 26px;
+  display: block;
+
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #FFC5AB;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(50deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(145deg);
+  }
+}
+
+
+   /*SIDE BAR NAV*/
+.sidebar_nav{
+    position: fixed;
+    width: 90px;
+    height: 1024px;
+    left: 0px;
+    top: 78px;
+    
+    background-color: #00072D;
+  
+  }
+  
+  .sidebar_nav.active{width: 350px;}
+  
+  
+  .sidebar_nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 150px;
+  }
+  
+  .sidebar_nav ul li{
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .sidebar_nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #FF6B00;
+  }
+  
+  .sidebar_nav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 65px;
+    height: 100px;
+    width: 50px;
+    top: 50px;
+    line-height: 130px;
+    text-align: center;
+    left: 5px;
+   
+  }
+  
+  .sidebar_nav ul li a .icon1, .icon2, .icon3, .icon4{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 100px;
+    top: 50px;
+    line-height: 120px;
+    text-align: center;
+    left: 0px;
+    margin-left: 0px;
+  }
+  
+  .sidebar_nav ul li a .icon img{max-width: 50%;}
+  
+  
+  
+  .sidebar_nav ul li a .title1{
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    height: 40px;
+    top: 25px;
+    line-height: 150px;
+    white-space: normal;
+    color: white;
+  }
+  
+  .sidebar_nav ul li a .icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover{
+  
+    background: linear-gradient(90deg, #00147D 29.85%, rgba(0, 20, 125, 0.5624) 82.51%, rgba(0, 20, 125, 0) 100%);
+    
+  }
+  
+
+  /*MENU/hamburger icon*/
+  
+  .menu{
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    float: left;
+  }
+  .menu.active{left: 200px;}
+  
+  .menu ion-icon{
+    position: absolute;
+    color: #FF6B00;
+    font-size: 34px;
+    display: none;
+    width: 70px;
+    top: 100px;
+  
+  }
+  
+  /*hide option texts*/
+  #defaulthide1, #defaulthide2, #defaulthide3, #defaulthide4{
+    visibility: hidden;
+  }
+  
+  /* Open round */
+  .menu ion-icon.open,
+  .menu.active ion-icon.close{
+  
+    display:grid;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+  
+  /* Close_round */
+  }
+  .menu ion-icon.close,
+  .menu.active ion-icon.open{
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+  }
+  

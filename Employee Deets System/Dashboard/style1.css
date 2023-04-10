@@ -1,0 +1,448 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    background-color: green;
+    padding: 2%;
+    color: white;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 11%;
+}
+.navbar h1{
+    align-self: center;
+}
+
+.navlist{
+    margin-right: 10%;
+    align-self: center;
+}
+.navbar .navlist ul{
+    display: flex;
+    list-style: none;
+    font-size: large;
+   
+}
+
+.navbar .navlist ul li{
+    align-self: center;
+    padding: 5%;
+}
+.navbar .navlist ul li .user-icon{
+    width: 118px;
+    background-color: chartreuse;
+    padding: 10%;
+    border-radius: 25px;
+    display:flex;
+    align-self: center;
+}
+.navbar .navlist ul li .user-icon i{
+
+    background-color: gray;
+    padding: 5%;
+    border-radius: 15px;
+    align-self: center;
+
+}
+.navbar .navlist ul li .user-icon p{
+    align-self: center;
+
+}
+/* JORLIDEN DROPDOWN */
+
+.supper-dropdown{
+    display:none;
+}
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #F5F5F5;
+    right: 140px;
+    top: 55px;
+}
+.dropdown_box{
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    background: #F5F5F5;
+    right: 78px;
+    top: 65px;
+    border-radius: 7px;
+    border-bottom: 5px solid chartreuse;
+
+}
+.dropbtn {
+    background-color: chartreuse;
+    color: #F5F5F5;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: chartreuse;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #F5F5F5;
+    min-width: 110px;
+    z-index: 1;
+    border-radius: 10px;
+
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 13px 20px 5px 45px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+ .dropdown-content i{
+    top: 90px;
+    left: 20px;
+    border-radius: 15px;
+    align-self: center;
+    position: absolute;
+    color: black;
+  }
+
+ .dropdown-content a:hover {
+    border-radius: 7px;
+    background-color: #ddd;}
+
+  .show {display: block;}
+
+  
+
+   /* HI JORLIDEN! */
+.contents p{
+   
+
+    position: fixed;
+    display: flex;
+    width: 215px;
+    height: 34px;
+    left: 400px;
+    top: 189px;
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 41px;
+
+    color: #000000;
+}
+
+.contents h1{
+    /* WELCOME TO EMPLOYEE DEETS */
+
+
+    position: fixed;
+    display: flex;
+    width: 968px;
+    height: 146px;
+    left: 405px;
+    top: 244px;
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 83.9%;
+
+/* or 74px */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+
+.contents h2{
+    /* In this Dashboard, you can: */
+
+    position: fixed;
+    height: 51px;
+    left: 400px;
+    top: 410px;
+
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 51px;
+/* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+
+/* EDIT-INFO-Info */
+
+.info .circle-info1 .img{
+    border-radius: 50px;
+    border-color: white;
+}
+.info .circle-info1 h3{
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    display: flex;
+}
+
+.info .circle-info2 h3{
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 50;
+    display: flex;
+}
+
+.info .circle-info3 img{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.info .circle-info3 h3{
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+}
+
+.info p{
+    margin-left: 10px;
+    margin-top: 60px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 11px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.info img{
+    margin-left: 75px;
+    margin-top: 20px;
+}
+.circle-info1{
+    position: fixed;
+    height: 260px;
+    width: 260px;
+    border: 5px solid #8598FF;
+    border-radius: 200%;
+    top: 480px;
+    float: left;
+    left: 400px;
+    background: #00072D;
+    color: #FFFFFF;
+}
+
+.circle-info2{
+    position: fixed;
+    height: 260px;
+    width: 260px;
+    border: 5px solid #8598FF;
+    border-radius: 100%;
+    top: 480px;
+    float: left;
+    left: 750px;
+    background: #00072D;
+    color: #FFFFFF;
+}
+
+
+.circle-info3{
+    position: fixed;
+    height: 260px;
+    width: 260px;
+    border: 5px solid #8598FF;
+    border-radius: 200%;
+    top: 480px;
+    float: left;
+    left: 1100px;
+    background: #00072D;
+    color: #FFFFFF;
+
+    
+}
+
+/*SIDE BAR NAV*/
+.sidebar_nav{
+    position: fixed;
+    width: 90px;
+    height: 1024px;
+    left: 0px;
+    top: 70px;
+    
+    background-color: #00072D;
+
+}
+
+.sidebar_nav.active{width: 350px;}
+
+
+.sidebar_nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 150px;
+}
+
+.sidebar_nav ul li{
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.sidebar_nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #FF6B00;
+}
+
+.sidebar_nav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 65px;
+    height: 100px;
+    width: 50px;
+    top: 50px;
+    line-height: 130px;
+    text-align: center;
+    left: 5px;
+   
+}
+
+.sidebar_nav ul li a .icon1, .icon2, .icon3, .icon4{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 100px;
+    top: 50px;
+    line-height: 120px;
+    text-align: center;
+    left: 0px;
+    margin-left: 0px;
+}
+
+.sidebar_nav ul li a .icon img{max-width: 50%;}
+
+
+
+.sidebar_nav ul li a .title1{
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    height: 40px;
+    top: 25px;
+    line-height: 150px;
+    white-space: normal;
+    color: white;
+}
+
+.sidebar_nav ul li a .icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover{
+
+    background: linear-gradient(90deg, #00147D 29.85%, rgba(0, 20, 125, 0.5624) 82.51%, rgba(0, 20, 125, 0) 100%);
+    
+}
+
+
+
+/*MENU/hamburger icon*/
+
+.menu{
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    float: left;
+}
+.menu.active{left: 200px;}
+
+.menu ion-icon{
+    position: absolute;
+    color: #FF6B00;
+    font-size: 34px;
+    display: none;
+    width: 70px;
+    top: 100px;
+
+}
+
+/*hide option texts*/
+#defaulthide1, #defaulthide2, #defaulthide3, #defaulthide4{
+    visibility: hidden;
+}
+
+
+
+
+/* Open round */
+.menu ion-icon.open,
+.menu.active ion-icon.close{
+
+    display:grid;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+
+/* Close_round */
+}
+.menu ion-icon.close,
+.menu.active ion-icon.open{
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+}
+
+
+@media only screen and(max-width: 1200px){
+
+}
