@@ -85,10 +85,12 @@
     background-color: chartreuse;
     color: #F5F5F5;
     padding: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 200;
     border: none;
     cursor: pointer;
     align-self: center;
+
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -158,12 +160,11 @@
     color: #000000;
 }
 
-.contents h1{
+.contents h1.header{
     /* WELCOME TO EMPLOYEE DEETS */
 
 
     position: fixed;
-    display: flex;
     width: 968px;
     height: 146px;
     left: 405px;
@@ -177,10 +178,10 @@
 
 /* or 74px */
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #000000;
+    color: #000000;
 
 }
 

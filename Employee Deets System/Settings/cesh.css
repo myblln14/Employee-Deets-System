@@ -173,16 +173,17 @@
   }
 
   /*SIDE BAR NAV*/
-.sidebar_nav{
-  position: fixed;
-  width: 90px;
-  height: 1024px;
-  left: 0px;
-  top: 78px;
-  
-  background-color: #00072D;
+  .sidebar_nav{
+    position: fixed;
+    width: 90px;
+    height: 1024px;
+    left: 0px;
+    top: 70px;
+    
+    background-color: #00072D;
 
 }
+
 
 .sidebar_nav.active{width: 350px;}
 
